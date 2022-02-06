@@ -1,11 +1,12 @@
 <script>
     export let popular;
+    import MovieCard from "./MovieCard.svelte"
     console.log(popular[0]);
 </script>
 
 <h3>Popular Movies</h3>
 <div class="popular-movies">
     {#each popular as movie}
-        <h1>{movie.title}</h1>
+    <MovieCard {movie}/>
     {/each}
 </div>
