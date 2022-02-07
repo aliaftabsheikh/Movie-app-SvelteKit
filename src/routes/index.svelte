@@ -14,11 +14,13 @@ https://api.themoviedb.org/3/movie/popular?api_key=d5c35e51c81488b19da7c1f572507
 </script>
 
 <script>
-    import PopularMovie from "../components/PopularMovie.svelte";
-    export let popular;
-    import global from '../global.css'
+	import PopularMovie from '../components/PopularMovie.svelte';
+	export let popular;
+	import SearchMovies from '../components/SearchMovies.svelte';
+	import global from '../global.css';
 </script>
 
 <section>
-    <PopularMovie {popular}/>
+	<SearchMovies />
+	<PopularMovie {popular} />
 </section>

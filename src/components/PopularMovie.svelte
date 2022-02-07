@@ -2,7 +2,10 @@
     export let popular;
     import MovieCard from "./MovieCard.svelte"
     console.log(popular[0]);
-</script>
+    import Nav from '../components/Nav.svelte'
+ </script>
+
+<Nav/>
 
 <h3>Popular Movies</h3>
 <div class="popular-movies">
