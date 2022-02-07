@@ -16,7 +16,7 @@ https://api.themoviedb.org/3/movie/popular?api_key=d5c35e51c81488b19da7c1f572507
 <script>
     import PopularMovie from "../components/PopularMovie.svelte";
     export let popular;
-    console.log(popular);
+    import global from '../global.css'
 </script>
 
 <section>
