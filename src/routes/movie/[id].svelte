@@ -1,6 +1,5 @@
 <script context="module">
 	export async function load({ fetch, params }) {
-		console.log(params);
 		const res = await fetch(
 			`https://api.themoviedb.org/3/movie/${params.id}?api_key=d5c35e51c81488b19da7c1f572507a3d&language=en-US`
 		);
@@ -16,7 +15,6 @@
 
 <script>
 	export let movieDetail;
-	console.log(movieDetail);
 </script>
 
 <div class="movie-details">

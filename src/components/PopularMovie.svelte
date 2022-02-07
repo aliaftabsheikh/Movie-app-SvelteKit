@@ -1,7 +1,6 @@
 <script>
     export let popular;
     import MovieCard from "./MovieCard.svelte"
-    console.log(popular[0]);
     import Nav from '../components/Nav.svelte'
  </script>
 
@@ -24,4 +23,4 @@
         grid-column-gap: 1rem;
         grid-row-gap: 2rem;
     }
-</style>
+</style>    
