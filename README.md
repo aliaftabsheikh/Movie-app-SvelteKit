@@ -1,40 +1,25 @@
-# create-svelte
+# Movies DB Web Application
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+### _Movies DB Web App developed using SveltKit, SveltJs and TMDB API_
 
-## Creating a project
+### :link:
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Learned from : [Dev Ed](https://youtu.be/ydR_M0fw9Xc)
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## Images
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+<img src='./static/Movie DB.png' />
+<img src='./static/Movie DB Search.png' />
 
-> Note: the `@next` is temporary
+## Run Locally
 
-## Developing
+- Run this command `git clone https://github.com/aliaftabsheikh/Movie-app-SvelteKit.git`
+- You are now in the dev environment and you can play around
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Technologies
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment.
+- HTML
+- CSS
+- SveltJs (Javascript Framework)
+- SveltKit (Svelte Framework)
+- TMDB (For movies API)
