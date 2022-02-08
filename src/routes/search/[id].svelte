@@ -11,11 +11,14 @@ https://api.themoviedb.org/3/search/movie?api_key=d5c35e51c81488b19da7c1f572507a
 		}
 	}
 </script>
+<Nav/>
 
 <script>
     import MovieCard from "../../components/MovieCard.svelte";
+	import Nav from "../../components/Nav.svelte";
 	export let searchedMovie;
 </script>
+
 
 <div class="searched-movies">
 	{#each searchedMovie as movie }

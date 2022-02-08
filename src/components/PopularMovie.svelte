@@ -4,7 +4,7 @@
     import Nav from '../components/Nav.svelte'
  </script>
 
-<Nav/>
+<!-- <Nav/> -->
 
 <h3>Popular Movies</h3>
 <div class="popular-movies">

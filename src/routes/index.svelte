@@ -1,7 +1,7 @@
 <script context="module">
 	export async function load({ fetch }) {
 		const res = await fetch(`
-https://api.themoviedb.org/3/movie/popular?api_key=d5c35e51c81488b19da7c1f572507a3d&language=en-US&page=1`);
+https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_API}&language=en-US&page=1`);
 
 		const data = await res.json();
 		if (res.ok) {
@@ -13,15 +13,18 @@ https://api.themoviedb.org/3/movie/popular?api_key=d5c35e51c81488b19da7c1f572507
 </script>
 
 <script>
+    
 	import PopularMovie from '../components/PopularMovie.svelte';
-	export let popular;
 	import SearchMovies from '../components/SearchMovies.svelte';
-	import global from '../global.css';
+	export let popular;
     import {fly} from 'svelte/transition'
+	import global from '../global.css';
+    import Nav from '../components/Nav.svelte';
 
 </script>
 
 <section in:fly={{ y: 50, duration: 500 }} out:fly={{ duration: 500 }}>
+    <Nav/>
 	<SearchMovies />
 	<PopularMovie {popular} />
 </section>
