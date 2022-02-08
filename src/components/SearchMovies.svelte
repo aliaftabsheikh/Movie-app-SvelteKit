@@ -12,11 +12,11 @@
 	}
 
     function submitSearch (){
-        goto('/search/' + inputValue)
+        goto(`/search/${inputValue}`)
     }
 </script>
 
-<form on:submit ={submitSearch} class="search">
+<form on:submit|preventDefault={submitSearch} class="search">
 	{#if !active}
 		<label for="search-movie">Search Movie</label>
 	{/if}
