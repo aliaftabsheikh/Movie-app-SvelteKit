@@ -17,9 +17,11 @@ https://api.themoviedb.org/3/movie/popular?api_key=d5c35e51c81488b19da7c1f572507
 	export let popular;
 	import SearchMovies from '../components/SearchMovies.svelte';
 	import global from '../global.css';
+    import {fly} from 'svelte/transition'
+
 </script>
 
-<section>
+<section in:fly={{ y: 50, duration: 500 }} out:fly={{ duration: 500 }}>
 	<SearchMovies />
 	<PopularMovie {popular} />
 </section>
