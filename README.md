@@ -2,7 +2,7 @@
 
 ### _Movies DB Web App developed using SveltKit, SveltJs and TMDB API_
 
-### :link:
+### :link: https://svelte-movies-app.netlify.app/
 
 ### Learned from : [Dev Ed](https://youtu.be/ydR_M0fw9Xc)
 
